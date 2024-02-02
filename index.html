@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" />
+    <style>
+        .mirrored-image {
+            transform: scaleX(-1);
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 40px;
+        }
+
+        .timeline-date {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #04374F;
+        }
+
+        .timeline-content {
+            background-color: #F8F9FA;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-content h3 {
+            color: #04374F;
+        }
+
+        .timeline-content p {
+            color: #6C757D;
+        }
+
+        /* Animation for progress bar */
+        @keyframes progress-animation {
+            0% {
+                width: 0%;
+            }
+        }
+
+        .progress-bar-animated {
+            animation: progress-animation 2s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-dark fixed-top"
+        style="background: linear-gradient(to right, #083263, #061231);">
+        <div class="container">
+            <a class="navbar-brand" href="#">Your Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experiences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" style="border-color: white; border-radius: 20px;" href="#"
+                            id="downloadCVBtn">Download My CV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-dark text-white text-center pt-5"
+        style="background-image: url('assets/header.jpg'); background-size: cover; background-position: center;">
+
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="row d-flex flex-row-reverse align-items-end">
+                <div class="col-md-6 pb-5">
+                    <h3 class="mt-3">Hello! Your Name</h3>
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, eligendi laborum? Ipsum, vel
+                        consequatur excepturi
+                        veniam et eaque magni tempore repellendus atque hic dolorem vitae neque earum porro at quo?
+                    </p>
+                    <a href="#contact" class="btn btn-primary btn-lg"
+                        style="background: linear-gradient(to right, #04374F, #01344C); border-color: white; border-radius: 20px;">
+                        Get in Touch</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/p1-removebg-preview.png" alt="Your Name" class="img-fluid rounded-circle"
+                        style="width: auto;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="mb-4 text-center">About Me</h2>
+
+            <div class="row flex-row-reverse align-items-center">
+                <!-- Kolom Kiri (Foto) -->
+                <div class="col-md-4 ms-auto">
+                    <div class="mirrored-image">
+                        <img src="assets/p1-removebg-preview.png" alt="Your Name" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan (Deskripsi) -->
+                <div class="col-md-8">
+                    <h3>Hello! Your Name</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est minima dignissimos nihil deleniti
+                        rem repudiandae blanditiis perferendis libero aliquid, adipisci optio eveniet, beatae atque sit
+                        fugiat officia tempore nisi illum!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="py-5">
+        <div class="container p-5" data-aos="fade-up" data-aos-duration="1000"
+            style="background: linear-gradient(to right, #04374F, #01344C);">
+            <h2 class="mb-4 text-center text-white">My Skills</h2>
+            <p class="lead mb-4 text-center text-white">Elevating Your Project with Proven Skills</p>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <!-- Skill Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Skill 1</h5>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-animated" role="progressbar"
+                                    style="width: 80%; background: linear-gradient(to right, #04374F, #01344C);"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">80%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Skill 2</h5>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-animated" role="progressbar"
+                                    style="width: 70%; background: linear-gradient(to right, #04374F, #01344C);"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">70%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Skill 3</h5>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-animated" role="progressbar"
+                                    style="width: 85%; background: linear-gradient(to right, #04374F, #01344C);"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">85%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Skill 4</h5>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-animated" role="progressbar"
+                                    style="width: 75%; background: linear-gradient(to right, #04374F, #01344C);"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">75%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Skill 5</h5>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-animated" role="progressbar"
+                                    style="width: 100%; background: linear-gradient(to right, #04374F, #01344C);"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">100%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Skill 6</h5>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-animated" role="progressbar"
+                                    style="width: 90%; background: linear-gradient(to right, #04374F, #01344C);"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">90%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more skill cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">My Professional Journey</h2>
+            <p class="lead mb-4 text-center">Embark on a journey through my professional experiences, where I've
+                consistently delivered impactful solutions and exceeded client expectations.</p>
+
+            <!-- Experience Timeline -->
+            <ul class="timeline">
+                <!-- Experience Item 1 -->
+                <li class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="timeline-date">2020 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Job Title</h3>
+                        <p>Company Name</p>
+                        <p>Description of your responsibilities and achievements in this role.</p>
+                    </div>
+                </li>
+
+                <!-- Experience Item 2 -->
+                <li class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="timeline-date">2018 - 2020</div>
+                    <div class="timeline-content">
+                        <h3>Job Title</h3>
+                        <p>Company Name</p>
+                        <p>Description of your responsibilities and achievements in this role.</p>
+                    </div>
+                </li>
+
+                <!-- Add more items as needed -->
+
+                <!-- Additional Experience Items (Hidden by default) -->
+                <li class="timeline-item" data-aos="fade-up" data-aos-duration="1000" hidden>
+                    <div class="timeline-date">2015-2018</div>
+                    <div class="timeline-content">
+                        <h3>Job Title</h3>
+                        <p>Company Name</p>
+                        <p>Description of additional responsibilities and achievements in this role.</p>
+                    </div>
+                </li>
+
+                <li class="timeline-item" data-aos="fade-up" data-aos-duration="1000" hidden>
+                    <div class="timeline-date">2013-2015</div>
+                    <div class="timeline-content">
+                        <h3>Job Title</h3>
+                        <p>Company Name</p>
+                        <p>Description of additional responsibilities and achievements in this role.</p>
+                    </div>
+                </li>
+
+                <li class="timeline-item" data-aos="fade-up" data-aos-duration="1000" hidden>
+                    <div class="timeline-date">2010-2013</div>
+                    <div class="timeline-content">
+                        <h3>Job Title</h3>
+                        <p>Company Name</p>
+                        <p>Description of additional responsibilities and achievements in this role.</p>
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- See More Button -->
+            <div class="text-center mb-5">
+                <button id="seeMoreBtn" class="btn btn-primary"
+                    style="background: linear-gradient(to right, #04374F, #01344C); border-color: white; border-radius: 20px;">See
+                    More</button>
+            </div>
+        </div>
+
+        <section id="contact" class="py-5" style="background: linear-gradient(to right, #04374F, #01344C);">
+            <div class="container text-white text-center">
+                <div class="row">
+                    <!-- Kolom Kiri (My Socials) -->
+                    <div class="col-md-6">
+                        <h3 class="mb-3">My Socials</h3>
+                        <div class="mb-3">
+                            <!-- Tambahkan ikon dan tautan media sosial di sini -->
+                            <a href="link-whatsapp" class="text-white" style="text-decoration: none;"><i
+                                    class="fab fa-whatsapp"></i> WhatsApp</a><br>
+                            <a href="link-instagram" class="text-white" style="text-decoration: none;"><i
+                                    class="fab fa-instagram"></i> Instagram</a><br>
+                            <a href="link-facebook" class="text-white" style="text-decoration: none;"><i
+                                    class="fab fa-facebook"></i> Facebook</a><br>
+                            <a href="link-linkedin" class="text-white" style="text-decoration: none;"><i
+                                    class="fab fa-linkedin"></i> LinkedIn</a><br>
+                        </div>
+                    </div>
+
+                    <!-- Kolom Kanan (Contact Us) -->
+                    <div class="col-md-6">
+                        <h2 class="mb-4">Contact Me</h2>
+                        <form id="contactForm" style="max-width: 400px; margin: auto;">
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-end">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-end">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label text-end">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg"
+                                    style="background: linear-gradient(to right, #04374F, #01344C); border-color: white; border-radius: 20px;">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-3"
+            style="background: linear-gradient(to right, #083263, #061231);">
+            <div class="container">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery for form validation -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Custom JavaScript for form validation -->
+        <script src="script.js"></script>
+        <!-- AOS Library JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
+
+        <!-- Initialize AOS -->
+        <script>
+            AOS.init();
+        </script>
+
+        <script>
+            document.getElementById('seeMoreBtn').addEventListener('click', function () {
+                // Show hidden items by removing 'hidden' attribute
+                var hiddenItems = document.querySelectorAll('.timeline-item[hidden]');
+                hiddenItems.forEach(function (item) {
+                    item.removeAttribute('hidden');
+                });
+
+                // Hide the "See More" button after revealing all items
+                this.style.display = 'none';
+            });
+        </script>
+
+        <script>
+            document.getElementById('downloadCVBtn').addEventListener('click', function () {
+                // Replace 'your-cv-file.pdf' with the actual file path or download link
+                window.location.href = 'your-cv-file.pdf';
+            });
+        </script>
+
+</body>
+
+</html>
