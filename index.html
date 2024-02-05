@@ -117,6 +117,70 @@
             display: flex;
             align-items: center;
         }
+
+        h2.mb-4::after {
+            content: "";
+            display: block;
+            width: 40px;
+            /* Sesuaikan panjang garis bawah sesuai keinginan Anda */
+            height: 3px;
+            /* Sesuaikan ketebalan garis bawah sesuai keinginan Anda */
+            background-color: #04374F;
+            /* Sesuaikan warna sesuai keinginan Anda */
+            margin-top: 10px;
+            /* Sesuaikan jarak antara teks dan garis bawah sesuai keinginan Anda */
+            margin-left: calc(50% - 20px);
+            /* Menempatkan garis bawah di tengah relatif terhadap teks */
+        }
+
+        #skil h2.mb-4::after {
+            content: "";
+            display: block;
+            width: 40px;
+            /* Sesuaikan panjang garis bawah sesuai keinginan Anda */
+            height: 3px;
+            /* Sesuaikan ketebalan garis bawah sesuai keinginan Anda */
+            background-color: white;
+            /* Sesuaikan warna sesuai keinginan Anda */
+            margin-top: 10px;
+            /* Sesuaikan jarak antara teks dan garis bawah sesuai keinginan Anda */
+            margin-left: calc(50% - 20px);
+            /* Menempatkan garis bawah di tengah relatif terhadap teks */
+        }
+
+        #kontak h2.mb-4::after {
+            content: "";
+            display: block;
+            width: 40px;
+            /* Sesuaikan panjang garis bawah sesuai keinginan Anda */
+            height: 3px;
+            /* Sesuaikan ketebalan garis bawah sesuai keinginan Anda */
+            background-color: white;
+            /* Sesuaikan warna sesuai keinginan Anda */
+            margin-top: 10px;
+            /* Sesuaikan jarak antara teks dan garis bawah sesuai keinginan Anda */
+            margin-left: calc(50% - 20px);
+            /* Menempatkan garis bawah di tengah relatif terhadap teks */
+        }
+
+        .rounded-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #04374F;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
     </style>
 </head>
 
@@ -136,6 +200,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experiences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary" style="border-color: white; border-radius: 20px;" href="#"
@@ -190,6 +255,8 @@
                         repudiandae blanditiis perferendis libero aliquid, adipisci optio eveniet, beatae atque sit
                         fugiat
                         officia tempore nisi illum!</p>
+                    <a class="btn btn-primary" style="border-color: white; border-radius: 20px;"
+                        href="javascript:void(0)" id="downloadCVBtn">Download My CV</a>
                 </div>
             </div>
         </div>
@@ -198,7 +265,7 @@
 
     <section id="skills" class="py-5">
         <div class="container p-5" data-aos="fade-up" data-aos-duration="1000"
-            style="background: linear-gradient(to right, #04374F, #01344C);">
+            style="background: linear-gradient(to right, #04374F, #01344C);" id="skil">
             <h2 class="mb-4 text-center text-white">My Skills</h2>
             <p class="lead mb-4 text-center text-white">Elevating Your Project with Proven Skills</p>
 
@@ -363,23 +430,150 @@
             </div>
         </div>
 
+        <section id="portfolio" class="py-5">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="mb-4 text-center">My Portfolio</h2>
+                <p class="lead mb-4 text-center">Journey Through My Work</p>
+                <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Portfolio Item 1 -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <!-- Card 1 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="assets/portfolio.jpg" class="card-img-top" alt="Project 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project 1</h5>
+                                            <p class="card-text">Description of Project 1.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="assets/portfolio.jpg" class="card-img-top" alt="Project 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project 2</h5>
+                                            <p class="card-text">Description of Project 2.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="assets/portfolio.jpg" class="card-img-top" alt="Project 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project 3</h5>
+                                            <p class="card-text">Description of Project 3.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Card 1 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="assets/portfolio.jpg" class="card-img-top" alt="Project 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project 4</h5>
+                                            <p class="card-text">Description of Project 4.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="assets/portfolio.jpg" class="card-img-top" alt="Project 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project 5</h5>
+                                            <p class="card-text">Description of Project 5.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="assets/portfolio.jpg" class="card-img-top" alt="Project 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project 6</h5>
+                                            <p class="card-text">Description of Project 6.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more carousel items as needed -->
+
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+
+
         <section id="contact" class="py-5" style="background: linear-gradient(to right, #04374F, #01344C);">
-            <div class="container text-white text-center">
-                <div class="row">
+            <div class="container text-white text-center" id="kontak">
+                <h2 class="mb-4">Contact Me</h2>
+                <div class="row d-flex align-items-center">
                     <!-- Kolom Kiri (My Socials) -->
-                    <div class="col-md-6">
-                        <h3 class=" mb-3">My Socials</h3>
-                        <div class="mb-3 social-icons justify-content-center">
-                            <a href="link-whatsapp"><i class="fab fa-whatsapp"></i></a>
-                            <a href="link-instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="link-facebook"><i class="fab fa-facebook"></i></a>
-                            <a href="link-linkedin"><i class="fab fa-linkedin"></i></a>
+                    <div class="col-md-5">
+                        <div class="row mb-3">
+                            <div class="col-auto me-2">
+                                <div class="rounded-icon">
+                                    <i class="fas fa-map-marker-alt fa-2x" style="color: #01344C;"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <span class="fs-5">Somewhere in world</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-auto me-2">
+                                <div class="rounded-icon">
+                                    <i class="fas fa-envelope fa-2x" style="color: #01344C;"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <span class="fs-5">email@example.com</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-auto me-2">
+                                <div class="rounded-icon">
+                                    <i class="fas fa-phone fa-2x" style="color: #01344C;"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <span class="fs-5">+1234567890</span>
+                            </div>
                         </div>
                     </div>
                     <!-- Kolom Kanan (Contact Us) -->
-                    <div class="col-md-6">
-                        <h2 class="mb-4">Contact Me</h2>
-                        <form id="contactForm" style="max-width: 400px; margin: auto;">
+                    <div class="col-md-7 mt-5">
+                        <h4>Your Message Matters</h4>
+                        <form id="contactForm" style="max-width: 500px; margin: auto;">
                             <div class="mb-3">
                                 <label for="name" class="form-label text-end">Name</label>
                                 <input type="text" class="form-control" id="name" name="name" required>
@@ -387,6 +581,11 @@
                             <div class="mb-3">
                                 <label for="email" class="form-label text-end">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label text-end">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label text-end">Message</label>
@@ -403,12 +602,25 @@
             </div>
         </section>
 
-        <footer class=" bg-dark text-white text-center py-3"
+        <footer class="bg-dark text-white text-center py-3"
             style="background: linear-gradient(to right, #083263, #061231);">
             <div class="container">
-                <p>&copy; 2024 Andhika Pratama Putra. All rights reserved.</p>
+                <div class="row">
+                    <div class="col">
+                        <h4 class="mb-4 text-start">Let's Connect</h4>
+                        <div class="social-icons">
+                            <a href="link-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="link-instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="link-facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="link-linkedin"><i class="fab fa-linkedin"></i></a>
+                            <!-- Tambahkan ikon media sosial lainnya sesuai kebutuhan -->
+                        </div>
+                    </div>
+                </div>
             </div>
+            <p>&copy; 2024 Andhika Pratama Putra. All rights reserved.</p>
         </footer>
+
 
         <!-- Bootstrap JS and Popper.js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -470,4 +682,43 @@
 
 </body>
 
-</html>
+</html><!-- <h2 class=" mb-3">My Socials</h2>
+    <div class="mb-3 social-icons justify-content-center">
+        <a href="link-whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="link-instagram"><i class="fab fa-instagram"></i></a>
+        <a href="link-facebook"><i class="fab fa-facebook"></i></a>
+        <a href="link-linkedin"><i class="fab fa-linkedin"></i></a>
+    </div> -->
+
+<!-- Card 1 
+    <div class="col-md-4">
+        <div class="card">
+            <img src="assets/portfolio.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Description of Project 1.</p>
+            </div>
+        </div>
+    </div>
+
+    Card 2
+    <div class="col-md-4">
+        <div class="card">
+            <img src="assets/portfolio.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Description of Project 2.</p>
+            </div>
+        </div>
+    </div>
+
+    Card 3
+    <div class="col-md-4">
+        <div class="card">
+            <img src="assets/portfolio.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Description of Project 3.</p>
+            </div>
+        </div>
+    </div> -->
